@@ -3,8 +3,7 @@ const Discord = require("discord.js");
 const Canvas = require("canvas");
 const Font = Canvas.Font;
 const { default: file } = require("@babel/core/lib/transformation/file/file");
-const apikey =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjNGVlZDY3MC1kNmM3LTAxM2EtZjE1Ny0wMDM1MjljNTU2MTAiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNjU2MTcwMjE0LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InRoZS1wcm9qZWN0LXB1In0.SsmZGyd9gKesO_rVSk-RlvHSiEDooGRnF4p9ryWSSKM";
+const apikey = API_KEY;
 const client = new Discord.Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
@@ -174,6 +173,4 @@ async function render(ign, msg, stat) {
   msg.reply({ files: [attachment] });
 }
 
-client.login(
-  "OTkyNzkyMjA4MDQwMjc2MDE4.GT1ygz.XZpUFmng5U_hdw0BvIrZIsOhj-n_GFib5Dk78s"
-);
+client.login(TOKEN);
